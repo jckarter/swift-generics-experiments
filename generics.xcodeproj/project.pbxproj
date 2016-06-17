@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D069CFC71CB0457D00CFA3AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D069CFC61CB0457D00CFA3AA /* main.cpp */; };
+		D069CFCE1CB045E500CFA3AA /* generics_new.S in Sources */ = {isa = PBXBuildFile; fileRef = D069CFCD1CB045E500CFA3AA /* generics_new.S */; };
+		D069CFD01CB08F6700CFA3AA /* generics_classic.S in Sources */ = {isa = PBXBuildFile; fileRef = D069CFCF1CB08F6700CFA3AA /* generics_classic.S */; };
+		D069CFD31CB09D4100CFA3AA /* generics_combined.S in Sources */ = {isa = PBXBuildFile; fileRef = D069CFD21CB09D4100CFA3AA /* generics_combined.S */; };
+		D069CFD51CB0A5B900CFA3AA /* generics_preservemost.S in Sources */ = {isa = PBXBuildFile; fileRef = D069CFD41CB0A5B900CFA3AA /* generics_preservemost.S */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,11 @@
 /* Begin PBXFileReference section */
 		D069CFC31CB0457D00CFA3AA /* generics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = generics; sourceTree = BUILT_PRODUCTS_DIR; };
 		D069CFC61CB0457D00CFA3AA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D069CFCD1CB045E500CFA3AA /* generics_new.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = generics_new.S; sourceTree = "<group>"; };
+		D069CFCF1CB08F6700CFA3AA /* generics_classic.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = generics_classic.S; sourceTree = "<group>"; };
+		D069CFD11CB092E300CFA3AA /* asm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm.h; sourceTree = "<group>"; };
+		D069CFD21CB09D4100CFA3AA /* generics_combined.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = generics_combined.S; sourceTree = "<group>"; };
+		D069CFD41CB0A5B900CFA3AA /* generics_preservemost.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = generics_preservemost.S; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				D069CFC61CB0457D00CFA3AA /* main.cpp */,
+				D069CFD11CB092E300CFA3AA /* asm.h */,
+				D069CFCF1CB08F6700CFA3AA /* generics_classic.S */,
+				D069CFCD1CB045E500CFA3AA /* generics_new.S */,
+				D069CFD41CB0A5B900CFA3AA /* generics_preservemost.S */,
+				D069CFD21CB09D4100CFA3AA /* generics_combined.S */,
 			);
 			path = generics;
 			sourceTree = "<group>";
@@ -118,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D069CFD31CB09D4100CFA3AA /* generics_combined.S in Sources */,
+				D069CFD51CB0A5B900CFA3AA /* generics_preservemost.S in Sources */,
+				D069CFD01CB08F6700CFA3AA /* generics_classic.S in Sources */,
 				D069CFC71CB0457D00CFA3AA /* main.cpp in Sources */,
+				D069CFCE1CB045E500CFA3AA /* generics_new.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +257,7 @@
 				D069CFCC1CB0457D00CFA3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
